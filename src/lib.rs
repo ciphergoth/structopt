@@ -321,7 +321,7 @@
 //!
 //! ## Type magic
 //!
-//! One of major things that makes `structopt` so awesome is it's type magic.
+//! One of major things that makes `structopt` so awesome is its type magic.
 //! Do you want optional positional argument? Use `Option<T>`! Or perhaps optional argument
 //! that optionally takes value (`[--opt=[val]]`)? Use `Option<Option<T>>`!
 //!
@@ -333,7 +333,7 @@
 //! `Option<T: FromStr>`         | optional positional argument or option            | `.takes_value(true).multiple(false)`
 //! `Option<Option<T: FromStr>>` | optional option with optional value               | `.takes_value(true).multiple(false).min_values(0).max_values(1)`
 //! `Vec<T: FromStr>`            | list of options or the other positional arguments | `.takes_value(true).multiple(true)`
-//! `Option<Vec<T: FromStr>`     | optional list of options                          | `.takes_values(true).multiple(true).min_values(0)`
+//! `Option<Vec<T: FromStr>>`    | optional list of options                          | `.takes_values(true).multiple(true).min_values(0)`
 //! `T: FromStr`                 | required option or positional argument            | `.takes_value(true).multiple(false).required(!has_default)`
 //!
 //! The `FromStr` trait is used to convert the argument to the given
